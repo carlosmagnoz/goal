@@ -5,9 +5,9 @@ function Login(){
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState ('');
 
-  function handleSubmit (event) {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("submit");
+    console.log( handleSubmit, {email, password});
   };
 
   return(
@@ -16,14 +16,24 @@ function Login(){
       <form className="form">
         <div className="field">
           <label htmlFor="email">email</label>
-          <input type="email"
+          <input
+           type="email"
            name="email"
             className="email"
-             value={email} onChange={(e) => setEmail(e.target.value)}/>
+             value={email} 
+             onChange=
+             {(e) => setEmail(e.target.value)}/>
         </div>
         <div className="field">
           <label htmlFor="password">senha</label>
-          <input type="password" name="password" className="password"/>
+          <input 
+          type="password"
+           name="password"
+            className="password"
+            value={password}
+            onChange=
+            {(e) => setPassword(e.target.value)}
+          />
         </div>
         <div className="actions">
           <button className="confirm" type="submit">Entrar</button>
