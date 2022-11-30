@@ -37,7 +37,7 @@ export default function Enter() {
          {/*Aqui já é a de deletar o Item.*/}
            
             {lista.map((item, index) =>(
-             <p className={styles.li}>
+             <p>
               {item}
                <button
                className={styles.ButtonOne}

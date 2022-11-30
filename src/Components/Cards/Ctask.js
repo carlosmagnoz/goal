@@ -5,16 +5,15 @@ function Ctask() {
   return (
 
     <Card className='conatiner'
-     style={{
+    style={{ 
       display: 'flex',
       flexDirection: 'column',
       width: '300px',
-      border:'2px solid red',
-      top: '30px',
-      left: '-470px',
-       }}>
+      border:'5px solid black',
+      top: '70px',
+      left: '100px',
+      }}>
       <Card.Body className='body'>
-
         <Card.Title>Task</Card.Title>
 
         <Card.Text className='Text'
