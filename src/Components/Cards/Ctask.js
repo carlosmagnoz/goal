@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Enter from '../Function';
 
-function Cstask() {
+function Ctask() {
   return (
 
     <Card className='conatiner'
@@ -32,4 +32,4 @@ function Cstask() {
   );
 }
 
-export default Cstask;
+export default Ctask;

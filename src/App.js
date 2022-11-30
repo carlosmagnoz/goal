@@ -1,12 +1,12 @@
 import './App.css';
-import Cstask from './Components/Cards/Ctask';
+import Ctask from './Components/Cards/Ctask';
 
 function App() {
   return (
     <>
-    <Cstask/>
+    <Ctask/>
     </>
   );
-}
+};
 
 export default App;
