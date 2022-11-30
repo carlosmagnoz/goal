@@ -1,0 +1,16 @@
+*{
+  background-color: rgb(210, 202, 202);
+}
+.Title{
+  font-size: 40px;
+  width: 400px;
+  background-color: rgb(116, 155, 189);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 530px;
+  border: 3px solid black;
+  border-radius: 10px;
+  align-items: center;
+}
