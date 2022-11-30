@@ -9,7 +9,7 @@ function Ctask() {
       display: 'flex',
       flexDirection: 'column',
       width: '300px',
-      border:'5px solid black',
+      border:'5px solid orange',
       top: '70px',
       left: '100px',
       backgroundColor: 'white'
