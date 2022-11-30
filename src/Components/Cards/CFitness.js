@@ -35,7 +35,7 @@ function CFitness() {
           color:'black',
           backgroundColor: 'white'
           }}>
-          Treinos, preparamentos e administração ao seu treinamento.
+          Treinos, movimentação e descrição fisíca.
         </Card.Text>
         
          <Enter/>

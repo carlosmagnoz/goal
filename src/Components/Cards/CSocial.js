@@ -34,7 +34,7 @@ function CSocial() {
           color:'black',
           backgroundColor: 'white'
           }}>
-            Lugares para sair, trocar ideias ou então reuniões.
+            Controle de eventos e lazer.
         </Card.Text>
         
          <Enter/>

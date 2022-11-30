@@ -5,6 +5,8 @@ import CSchool from './Components/Cards/CSchool';
 import CSocial from './Components/Cards/CSocial';
 import Ctask from './Components/Cards/Ctask';
 import CWork from './Components/Cards/CWork';
+// import Home from './HomePage/Home';
+// import Login from '../src/LoginPage/Login';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
     <CFodd/>
     <CSocial/>
     <CSchool/>
+    {/* <Login/> */}
+    {/* <Home/> */}
     </>
   );
 };

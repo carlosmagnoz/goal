@@ -24,7 +24,7 @@ function CFodd() {
           backgroundColor: 'white'
          }}
         >
-          Food
+          Food Control
         </Card.Title>
 
         <Card.Text className='Text'
