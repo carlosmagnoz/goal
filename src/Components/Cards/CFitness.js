@@ -12,23 +12,38 @@ function CFitness() {
       border:'5px solid red',
       top: '90px',
       left: '100px',
+      backgroundColor: 'white'
       }}>
-      <Card.Body className='body'>
-        <Card.Title>Gym</Card.Title>
+
+      <Card.Body className='body'
+      style={{
+        backgroundColor: 'white'
+      }}
+      >
+        <Card.Title
+         style={{
+          backgroundColor: 'white'
+         }}
+        >
+          Gym
+        </Card.Title>
 
         <Card.Text className='Text'
          style={{
           display: 'flex',
           flexDirection: 'column',
-          color:'black'}}>
+          color:'black',
+          backgroundColor: 'white'
+          }}>
           Treinos, preparamentos e administração ao seu treinamento.
         </Card.Text>
         
          <Enter/>
 
       </Card.Body>
+
     </Card>
   );
-}
+};
 
 export default CFitness;

@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import styles from './Function.modules.css'
 
 
 //Função que previne o form.
@@ -7,10 +6,10 @@ export default function Enter() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("submit");
-  }
+  };
   function handleKeyPress(event) {
     console.log(event.key);
-  }
+  };
 
 //Aqui já lista as constantes.
   const [lista, setLista] = useState([""]);
@@ -19,11 +18,25 @@ export default function Enter() {
 
 //HTML 
   return (
+
     <div>
-      <form className={styles.FormEnter} onSubmit={handleSubmit}>
+
+      {/*Barra de pesquisa */}
+      <form style={{
+        backgroundColor:"white",
+      }} onSubmit={handleSubmit}>
 
         {/*Input aonde vc digita o que quer */}
-        <input className={styles.EventEnter}
+        <input 
+        style={{
+          display:"flex",
+          flexDirection:"row",
+          backgroundColor: "white",
+          color: "black",
+          border: "2px solid black",
+          borderRadius: "4px",
+          fontFamily: "monospace"
+        }}
           type="text"
           id="text"
           value={newitem}
@@ -32,22 +45,51 @@ export default function Enter() {
         />
 
         {/*Aqui a função de add item */}
-        <button className={styles.EnviadoEnter} onClick={() => addNewItem()}>Add</button>
+        <button
+         style={{
+          display:"flex",
+          backgroundColor: "white",
+          border: "2px solid black",
+          marginTop: "30px",
+          borderRadius: "4px",
+          color:"black"
+        }} 
+         onClick=
+         {() => addNewItem()}
+        >
+          Add
+        </button>
          
          {/*Aqui já é a de deletar o Item.*/}
            
             {lista.map((item, index) =>(
-             <p>
+             <p 
+              style={{
+               backgroundColor: "white",
+               marginTop: "20px",
+               fontSize:"16px",
+               color:"black",
+               fontFamily:"sans-serif"
+             }}>
               {item}
                <button
-               className={styles.ButtonOne}
-                 onClick={()=> deletarItem(index)}>
+               style={{
+                backgroundColor: "white",
+                marginTop: "10px",
+                border: "2px solid black",
+                borderRadius: "4px"
+               }}
+                 onClick=
+                 {()=> deletarItem(index)}>
                  Delete
               </button>
+              
              </p>
+
             ))}
   
       </form>
+      
     </div>
   );
 

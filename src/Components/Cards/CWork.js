@@ -12,23 +12,37 @@ function CWork() {
       border:'5px solid green',
       top: '-300px',
       left: '500px',
+      backgroundColor: 'white'
       }}>
-      <Card.Body className='body'>
-        <Card.Title>Work</Card.Title>
+
+      <Card.Body className='body'
+      style={{
+        backgroundColor: 'white'
+      }}>
+
+        <Card.Title
+         style={{
+          backgroundColor: 'white'
+         }}>
+          Work
+        </Card.Title>
 
         <Card.Text className='Text'
          style={{
           display: 'flex',
           flexDirection: 'column',
-          color:'black'}}>
+          color:'black',
+          backgroundColor: 'white'
+          }}>
            Organização de trabalho.
         </Card.Text>
         
          <Enter/>
 
       </Card.Body>
+
     </Card>
   );
-}
+};
 
 export default CWork;
