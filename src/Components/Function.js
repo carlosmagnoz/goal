@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import styles from 'Function.modules.css'
+import styles from './Function.modules.css'
 
 
 //Função que previne o form.
