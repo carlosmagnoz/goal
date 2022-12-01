@@ -1,25 +1,16 @@
 import './App.css';
-import CFitness from './Components/Cards/CFitness';
-import CFodd from './Components/Cards/CFood';
-import CSchool from './Components/Cards/CSchool';
-import CSocial from './Components/Cards/CSocial';
-import Ctask from './Components/Cards/Ctask';
-import CWork from './Components/Cards/CWork';
-import Login from '../src/LoginPage/Login';
+import Login from './Pages/LoginPage/Login';
+import { Route, Routes } from 'react-router-dom';
+import Main from './Pages/main/Main';
 // import Home from './HomePage/Home';
 
 function App() {
   return (
     <>
-    <h1 className='Title'>Goal</h1>
-    <Ctask/>
-    <CFitness/>
-    <CWork/>
-    <CFodd/>
-    <CSocial/>
-    <CSchool/>
-    <Login/>
-    {/* <Home/> */}
+    <Routes>
+      <Route path="/main" element={<Main/>}/>
+      <Route path="/login" element={<Login/>}/>
+    </Routes>
     </>
   );
 };
