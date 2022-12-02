@@ -1,9 +1,18 @@
+import { FormControl } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  // const navigate = useNavigate();
+   const navigate = useNavigate();
+ 
+   const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!FormControl || !FormControl) return;
+    Button({FormControl: FormControl});
+    navigate('/main')
+     };
+  
   return (
     <Form 
      style={{
