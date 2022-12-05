@@ -1,18 +1,7 @@
-import { FormControl } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useNavigate } from 'react-router-dom';
 
 function Login() {
-   const navigate = useNavigate();
- 
-   const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!FormControl || !FormControl) return;
-    Button({FormControl: FormControl});
-    navigate('/main')
-     };
-  
   return (
     <Form 
      style={{
@@ -75,15 +64,14 @@ function Login() {
 
       </Form.Group>
 
-      <Button
+      <Button 
        style={{
         display: "flex",
         flexDirection: "column",
         marginTop: "-11px"
        }} 
        variant="primary"
-       type="submit">
-        Enter
+       type="submit">Enter
       </Button>
 
     </Form>
