@@ -1,7 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import {useNavigate} from "react-router-dom";
+// import { Link } from 'react-router-dom';
 
 function Login() {
+  let navigate = useNavigate();
   return (
     <Form 
      style={{
@@ -65,6 +68,9 @@ function Login() {
       </Form.Group>
 
       <Button 
+       onClick={() =>{
+        navigate("/Main");
+       }}
        style={{
         display: "flex",
         flexDirection: "column",
@@ -72,6 +78,9 @@ function Login() {
        }} 
        variant="primary"
        type="submit">Enter
+       {/* <nav>
+        <Link to="/Main">Main</Link>
+      </nav> */}
       </Button>
 
     </Form>
