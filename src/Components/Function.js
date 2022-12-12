@@ -105,6 +105,7 @@ export default function Enter() {
     tmpArray.splice(index,1);
 
     setLista(tmpArray);
+
   };
 
 };
